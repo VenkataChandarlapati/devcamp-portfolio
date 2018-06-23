@@ -1,21 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Blogs</h1>
-
 <table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
+  <tr>
+    <td><b>Blog title</b></td>
+    <td>Published</td>
+    <td>Body</td>
+    <td>toggle_status</td>
+  </tr>
 
-  <tbody>
-    <%= render @blogs %>
-  </tbody>
-</table>
+<% cache do%>
 
+    <%= render partial: @blogs%>
+<% end%>
 <br>
+</table>
 
 <%= link_to 'New Blog', new_blog_path %>
