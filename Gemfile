@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'bootstrap', '~> 4.1.1'
-gem 'krishna_view_tool', git: 'https://github.com/VenkataChandarlapati/krishna_view_tool'
+gem 'krishna_view_tool', '~> 0.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
