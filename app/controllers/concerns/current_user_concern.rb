@@ -3,11 +3,14 @@ module CurrentUserConcern
 
   def current_user
     super || guest_user
-   end
-
-  def guest_user
-    OpenStruct.new(name:"Guest User", first_name: 'Guest', last_name: 'User', email: 'noemail@emailds.com')
   end
 
+  def guest_user
+    guest = GuestUser.new
+    guest.name = 'Guest User'
+    guest.first_name = 'Guest'
+    guest.last_name = 'User'
+    guest.email = 'noemail@emaild.com'
+    guest
+  end
 end
-
