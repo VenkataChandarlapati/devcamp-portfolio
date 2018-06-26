@@ -34,7 +34,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.1);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -171,14 +171,25 @@ body {
 .auth-links a {
   color: black
 }
-.auth-links {
+
+.card{
   padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.col-md-8{
-  padding-left: 30px;
+.register-text{
+  text-align: right;
 }
-.col-md-4{
-  padding-left: 30px;
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }
+
+
+
+
 
